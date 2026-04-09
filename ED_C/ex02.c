@@ -57,9 +57,9 @@ void add(char *nome,int idade,int num_matricula,int pos){
 void LerAluno(){
     MTA* aux=Inicio;
     while (aux!=NULL)
-    {
-        printf("Nome do Aluno: %s \n",aux->nome);
-        printf("Idade do Aluno: %d \n",aux->idade);
+    {   printf("\n--- ALUNOS ---\n");
+        printf("Nome do Aluno: %s ",aux->nome);
+        printf("\nIdade do Aluno: %d \n",aux->idade);
         printf("Numero da Matricula: %d\n",aux->num_matricula);
 
         aux=aux->prox;
